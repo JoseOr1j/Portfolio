@@ -12,6 +12,10 @@
  * Date: 2014-05-01T17:42Z
  */
 
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
+
 (function( global, factory ) {
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
