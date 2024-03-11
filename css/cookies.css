@@ -1,0 +1,115 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("http://www.w3.org/2000/svg");
+/* listing it elsewhere besides the header does not make it appear, changed the color due to accessibility issues */
+
+.wrapper-cookie {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3 ease; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+  /* z-index keeps the cookie banner past all the sliders */
+}
+/*creates wrapper*/
+
+.wrapper-cookie.show {
+  right: 20px;
+}
+.wrapper-cookie header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+/* part of the cookie icon */
+.bi bi-x-lg
+{
+ color: darkblue; 
+ font-size: 32px;
+ text-align: center; 
+}
+/* edits the header for the icon */
+header i {
+  color: darkblue;
+  font-size: 27px;
+  text-align: center;
+}
+/* header change h2 text */
+header h2 {
+  color: darkblue;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 50px;
+}
+.wrapper-cookie .data-cookie {
+  margin-top: 16px;
+}
+.wrapper-cookie .data-cookie p {
+  color: #333;
+  font-size: 16px;
+}
+/* cookie text and links */
+.data-cookie p a {
+  color: darkblue;
+  text-decoration: none;
+  text-align: center; 
+  text-justify: auto;
+  word-spacing: normal;
+  font-style: normal; 
+}
+/* hover */
+.data-cookie p a:hover {
+  text-decoration: underline;
+}
+/* cookie button */
+.wrapper-cookie .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons-cookie .button-cookie {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: darkblue;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+/* accept button color, colors were changed because of contrast (ada issue) */
+.buttons-cookie #acceptBtn-cookie:hover {
+  background-color: #434b5e;
+}
+/* decline button color */
+#declineBtn-cookie {
+  border: 2px solid #434b5e;
+  background-color: #fff;
+  color: #434b5e;
+}
+
+#declineBtn-cookie:hover {
+  background-color: #434b5e;
+  color: #fff;
+}
+
+.declineBtn-cookie:hover
+{
+    border: 2px solid #434b5e;
+    background-color: #fff;
+    color: black; 
+}
+
+.declineBtn-cookie:hover
+{
+    background-color: #4070f4;
+    color: #fff;
+}

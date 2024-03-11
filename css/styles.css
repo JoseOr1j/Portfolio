@@ -491,7 +491,7 @@ a.active {
 }
 
 
-/* ======= INTRODUCTION ======= */
+/* ======= INTRODUCTION ======= EDITS INTRO BACKGROUND WALLPAPER STYLES CSS */
 
 #intro {
     background: url(../img/skyb.jpg);
@@ -754,20 +754,32 @@ a.fa.fa-angle-down:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #services h3 {
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #services p {
     font-size: 15px;
     margin: 0px auto 40px auto;
     max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #services a {
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -781,14 +793,16 @@ a.fa.fa-angle-down:focus {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    display;
-    block;
+    display : block;
     color: #ffffff;
     font-size: 55px;
     text-align: center;
     vertical-align: middle;
     position: relative;
     margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon:hover {
@@ -799,6 +813,7 @@ a.fa.fa-angle-down:focus {
     -moz-transition: all ease .7s;
     transition: all ease .7s;
 }
+
 
 @media screen and (max-width: 480px) {
     #services {
@@ -1588,11 +1603,16 @@ ul.social-buttons li a:active {
 #linkedin,
 #codepen,
 #github,
+#email
  {
     /*border: 1px solid #fff !important;*/
 }
 
 #facebook:hover {
+    background-color: #3B5998;
+}
+
+#email:hover{
     background-color: #3B5998;
 }
 
